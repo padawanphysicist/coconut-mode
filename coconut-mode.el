@@ -1,4 +1,4 @@
-;;; coconut-mode.el --- sample major mode for editing LSL.
+;;; coconut-mode.el --- sample major mode for editing Coconut.
 
 ;; Copyright © 2016, by Victor Santos
 
@@ -71,11 +71,9 @@
        ( ,(regexp-opt coconut-builtin-functions 'words) . font-lock-builtin-face)
        )))
 
-  (define-derived-mode coconut-mode python-mode "COCONUT script"
-    "COCONUT mode is a major mode for editing COCONUT files"
-    ;; you again used quote when you had '((coconut-hilite))
-    ;; I just updated the variable to have the proper nesting (as noted above)
-    ;; and use the value directly here
+  (define-derived-mode coconut-mode python-mode "Coconut script"
+    "Coconut mode is a major mode for editing coconut files"
+
     (setq font-lock-defaults coconut-font-lock-defaults)
     ;; Note that there's no need to manually call `coconut-mode-hook'; `define-derived-mode'
     ;; will define `coconut-mode' to call it properly right before it exits
