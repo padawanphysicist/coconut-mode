@@ -2,4 +2,4 @@
 
 This is a major mode for [[https://www.gnu.org/software/emacs/][GNU Emacs]] that highlights the [[http://coconut-lang.org/][Coconut language]].
 
-It is inspired by @NickSeagull [[https://github.com/NickSeagull/coconut-mode][coconut-mode]].
+It is inspired by [[https://github.com/NickSeagull][@NickSeagull]] [[https://github.com/NickSeagull/coconut-mode][coconut-mode]].
