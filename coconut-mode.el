@@ -64,7 +64,7 @@
        ;; stuff between double quotes
        ("\"\\.\\*\\?" . font-lock-string-face)
        ;; Functions
-       ("\\<def[ \t]+\\([a-zA-Z]+[a-zA-Z0-9]*\\)" 1 font-lock-function-name-face)
+       ("\\<def[ \t]+\\([a-zA-Z]+[a-zA-Z0-9_]*\\)" 1 font-lock-function-name-face)
        ;; |> |*> <| <*| -> are treated as special 
        ("\|>\\|<\|\\|<\\*\|\\|\|\\*>\\|->\\|\\$" . font-lock-variable-name-face)
        ( ,(regexp-opt coconut-keywords 'words) . font-lock-keyword-face)
